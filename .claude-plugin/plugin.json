@@ -1,0 +1,22 @@
+{
+  "name": "starkstack",
+  "version": "2.0.0",
+  "description": "Whole-engineer workflow for any developer: research \u2192 spec with numbered agents \u2192 plan reviews \u2192 build \u2192 review \u2192 QA \u2192 security \u2192 ship \u2192 retro, plus /feature for existing codebases and /migrate for stack migrations.",
+  "author": {
+    "name": "codingstark",
+    "url": "https://github.com/codingstark-dev"
+  },
+  "homepage": "https://github.com/codingstark-dev/starkstack",
+  "repository": "https://github.com/codingstark-dev/starkstack",
+  "license": "MIT",
+  "keywords": [
+    "workflow",
+    "agents",
+    "tdd",
+    "qa",
+    "security",
+    "github",
+    "cloudflare",
+    "migration"
+  ]
+}

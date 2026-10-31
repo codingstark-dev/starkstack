@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{PROJECT}} Research</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<style>
+:root{--bg:#0b0d10;--fg:#e8eaed;--muted:#9aa0a6;--card:#14181d;--line:#232a31;--accent:#7cf2c3;--warn:#ffb86b}
+@media (prefers-color-scheme: light){:root{--bg:#fafaf7;--fg:#16181b;--muted:#5f6368;--card:#fff;--line:#e4e4df;--accent:#0b7a55;--warn:#a65b00}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,sans-serif}
+main{max-width:880px;margin:0 auto;padding:40px 16px 80px}
+h1{font-size:2rem;margin:0 0 4px}h2{margin-top:2.4rem;border-bottom:1px solid var(--line);padding-bottom:6px}
+.meta{color:var(--muted);font-size:.9rem}
+.tldr,.plain{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:16px 0}
+.tldr{border-left:4px solid var(--accent)}
+.plain::before{content:"In plain words";display:block;font-weight:600;color:var(--accent);margin-bottom:4px;font-size:.85rem;text-transform:uppercase;letter-spacing:.04em}
+.means{color:var(--muted);font-style:italic}
+table{width:100%;border-collapse:collapse;font-size:.92rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:var(--card)}
+.risk{color:var(--warn);font-weight:600}
+</style>
+</head>
+<body><main>
+<h1>{{PROJECT}} — Stack &amp; Market Research</h1>
+<p class="meta">Prepared {{DATE}} · Format: HTML · Assumptions logged in decisions.md</p>
+
+<div class="tldr"><strong>TL;DR</strong><ul>
+<li>Recommendation: {{STACK}}</li><li>Why: {{WHY}}</li><li class="risk">Biggest risk: {{RISK}}</li></ul></div>
+<div class="plain">{{LAYMAN_SUMMARY}}</div>
+
+<h2>Market snapshot</h2>
+<p>{{TRENDS_COMPETITORS_GAPS}}</p><p class="means">What this means: {{…}}</p>
+
+<h2>Stack options</h2>
+<table><thead><tr><th>Option</th><th>Fit</th><th>Speed to ship</th><th>Cost @1k / @100k</th><th>Scale</th><th>Lock-in</th><th>Security</th></tr></thead>
+<tbody><tr><td>{{A}}</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<p class="means">What this means: {{…}}</p>
+
+<h2>Recommended architecture</h2>
+<pre class="mermaid">flowchart LR
+  U[User] --> FE[Frontend] --> API[API Worker] --> DB[(D1)]
+  API --> R2[(R2 storage)]</pre>
+<p class="means">What this means: {{…}}</p>
+
+<h2>Cost estimate</h2><p>{{COSTS}}</p>
+<h2>Risks &amp; mitigations</h2><p>{{RISKS}}</p>
+<h2>Open questions &amp; assumptions</h2><p>{{ASSUMPTIONS}}</p>
+<h2>Sources</h2><ol>{{SOURCES}}</ol>
+</main>
+<script>try{mermaid.initialize({startOnLoad:true,theme:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'default'})}catch(e){}</script>
+</body></html>

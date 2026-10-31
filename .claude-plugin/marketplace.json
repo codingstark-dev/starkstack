@@ -1,0 +1,15 @@
+{
+  "name": "starkstack",
+  "owner": {
+    "name": "codingstark"
+  },
+  "plugins": [
+    {
+      "name": "starkstack",
+      "source": "./",
+      "description": "Whole-engineer workflow for Claude Code.",
+      "version": "2.0.0"
+    }
+  ],
+  "description": "starkstack \u2014 a whole-engineer workflow plugin for Claude Code."
+}
